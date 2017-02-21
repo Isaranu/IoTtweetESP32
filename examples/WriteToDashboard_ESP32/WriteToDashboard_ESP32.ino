@@ -12,7 +12,7 @@
 
 const char *userid = "your-user-id";            //IoTtweet account user ID (6 digits, included zero pre-fix)
 const char *key = "your-iot-key";               //IoTtweet registered device key in "MY IOT Garage"
-const char *ssid = "your-ssid";                   //Your-WiFi-router-SSID
+const char *ssid = "your-ssid";                 //Your-WiFi-router-SSID
 const char *password = "your-wifi-password";            //Your-WiFi-password
 
 float data0, data1, data2, data3;                        //Your sending data variable.
