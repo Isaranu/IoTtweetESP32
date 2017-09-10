@@ -45,8 +45,8 @@ void setup() {
 
   /* Display message 2 */
   display.setTextSize(1);
-  display.setTextColor(YELLOW);
-  display.setCursor(0,0);
+  display.setTextColor(WHITE);
+  display.setCursor(0,10);
   display.println("ThaiEasyElec na ja");
   display.display();
 }  
