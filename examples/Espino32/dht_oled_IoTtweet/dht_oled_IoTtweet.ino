@@ -22,6 +22,7 @@ const char *key = "device-key";                 //IoTtweet registered device key
 const char *ssid = "ssid";                      //Your-WiFi-router-SSID
 const char *password = "password";              //Your-WiFi-password
 
+float data0, data1, data2, data3;               //Your sending data variable.
 String message_1 = "Hello from Espino32";       //Your private tweet meassage to dashboard
 String message_2 = "ThaieasyElec na ja :)";     //Your public tweet message to dashboard
 
