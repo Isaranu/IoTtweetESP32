@@ -11,7 +11,9 @@ Date : 2016.Oct.15
 
 #define IoTtweet_HOST "api.iottweet.com"
 #define IoTtweet_PORT 80
-#define IoTtweet_libVersion "v0.0.2A"
+#define IoTtweet_libVersion "v1.0.0"
+
+#define LAG_TIME 50
 
 //Connect WiFi router
 bool IoTtweetESP32::begin(const char *ssid, const char *passw)
@@ -123,6 +125,7 @@ String IoTtweetESP32::ReadControlPanel(const char *userid, const char *key)
 
     //Push data to api.iottweet.com
     client.print(_str);
+    delay(LAG_TIME);
 
     //Check response back
     while(client.available()){
@@ -209,6 +212,7 @@ String IoTtweetESP32::ReadDigitalSwitch(const char *userid, const char *key, uin
 
     //Push data to api.iottweet.com
     client.print(_str);
+    delay(LAG_TIME);
 
     //Check response back
     while(client.available()){
@@ -277,6 +281,7 @@ float IoTtweetESP32::ReadAnalogSlider(const char *userid, const char *key, uint8
 
     //Push data to api.iottweet.com
     client.print(_str);
+    delay(LAG_TIME);
 
     //Check response back
     while(client.available()){
